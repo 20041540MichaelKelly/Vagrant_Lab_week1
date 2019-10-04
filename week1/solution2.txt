@@ -1,0 +1,6 @@
+tshark -r /vagrant/webserver-eth1-traffic2.pcap -T fields -e eth.src -e eth.dst | sort | uniq    #code used to find the mac address
+08:00:27:cb:25:3f       0a:00:27:00:00:0b
+0a:00:27:00:00:0b       08:00:27:cb:25:3f
+
+
+The anwser is  0a:00:27:00:00:0b
